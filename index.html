@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>campoz.co — Branding & Posicionamento</title>
+  <meta name="description" content="campoz.co — agência de branding, posicionamento e gestão de mídias. Marketing com cultura, psicologia e moda." />
+  <meta name="theme-color" content="#0a090a" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Manrope:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#topo" class="nav__logo" aria-label="campoz.co — início">campoz<span>.co</span></a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#processo">Processo</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#contato" class="btn btn--pill nav__cta">Vamos ousar</a>
+    <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#processo">Processo</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contato">Contato</a>
+  </div>
+
+  <main>
+
+    <!-- ============ 1. HERO (vídeo controlado pelo scroll) ============ -->
+    <!-- A altura de .hero define quanto o usuário precisa rolar para o vídeo terminar (ver --hero-length no CSS) -->
+    <section class="hero" id="topo">
+      <div class="hero__stage" id="heroStage">
+        <div class="hero__media" id="heroMedia">
+          <video class="hero__video" id="heroVideo"
+                 muted autoplay playsinline preload="auto" aria-hidden="true"></video>
+          <div class="hero__shade"></div>
+        </div>
+
+        <div class="hero__content" id="heroContent">
+          <p class="eyebrow"><span class="dot"></span> Branding &amp; posicionamento</p>
+          <h1 class="hero__title">
+            Not made to<br />blend in. <em>Made to<br />stand out.</em>
+          </h1>
+          <p class="hero__lead">Marketing com cultura, psicologia e moda — para marcas que não nasceram para passar despercebidas.</p>
+        </div>
+
+        <!-- cortina de transição para a seção 2 -->
+        <div class="hero__curtain" id="heroCurtain" aria-hidden="true">
+          <div class="marquee">
+            <div class="marquee__inner">
+              <span>Sexy and daring brand</span><i>✦</i><span>Gestão de mídias</span><i>✦</i><span>Branding</span><i>✦</i><span>Consultoria</span><i>✦</i><span>Eventos</span><i>✦</i>
+              <span>Sexy and daring brand</span><i>✦</i><span>Gestão de mídias</span><i>✦</i><span>Branding</span><i>✦</i><span>Consultoria</span><i>✦</i><span>Eventos</span><i>✦</i>
+            </div>
+          </div>
+          <div class="curtain__statement"><p>Sua marca não nasceu<br />para <em>se misturar.</em></p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. DEPOIMENTOS ============ -->
+    <section class="section testimonials" id="depoimentos">
+      <div class="testimonials__text reveal">
+        <p class="eyebrow"><span class="dot"></span> Depoimentos</p>
+        <h2 class="h2">Quem ousou com a gente, <em>conta.</em></h2>
+        <p class="lead">Palavras de quem confiou a marca à campoz: marcas que deixaram de se misturar e passaram a ser lembradas.</p>
+
+        <blockquote class="quote">
+          <p>“Melhor social media que já contratamos. Recomendo de olhos fechados!”</p>
+          <footer><strong>@santaceiarestaurant</strong> · Restaurante</footer>
+        </blockquote>
+
+        <a href="#contato" class="btn btn--line">Quero ousar também <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="testimonials__carousel reveal" aria-label="Depoimentos de clientes">
+        <!-- Depoimentos reais (de eduardacampoz.vercel.app). O JS duplica os itens para o loop infinito. -->
+        <div class="prints" id="prints">
+          <div class="prints__track">
+            <figure class="fb fb--instagram">
+              <header class="fb__head">
+                <span class="fb__avatar" aria-hidden="true">E</span>
+                <span class="fb__who"><strong>@emporiodaespumaria</strong><small>Instagram · agora</small></span>
+              </header>
+              <blockquote class="fb__msg">Como cliente me sinto honrada por ter alguém com tantos talentos na equipe!</blockquote>
+            </figure>
+            <figure class="fb fb--whatsapp">
+              <header class="fb__head">
+                <span class="fb__avatar" aria-hidden="true">S</span>
+                <span class="fb__who"><strong>Suki Sushi</strong><small>WhatsApp · 2 min atrás</small></span>
+              </header>
+              <blockquote class="fb__msg">Você arrasa! Muito obrigada sua linda, eu amei!!</blockquote>
+            </figure>
+            <figure class="fb fb--instagram">
+              <header class="fb__head">
+                <span class="fb__avatar" aria-hidden="true">O</span>
+                <span class="fb__who"><strong>@ondarabrand_</strong><small>Instagram · 12 min atrás</small></span>
+              </header>
+              <blockquote class="fb__msg">Você entendeu a alma da marca em uma reunião. Os stories estão com a nossa cara. 🔥</blockquote>
+            </figure>
+            <figure class="fb fb--whatsapp">
+              <header class="fb__head">
+                <span class="fb__avatar" aria-hidden="true">F</span>
+                <span class="fb__who"><strong>Fernanda • Comary</strong><small>WhatsApp · 1 h atrás</small></span>
+              </header>
+              <blockquote class="fb__msg">Dudinha te desejo tudo de bom, além de você ser um amor, você é muito competente!</blockquote>
+            </figure>
+            <figure class="fb fb--instagram">
+              <header class="fb__head">
+                <span class="fb__avatar" aria-hidden="true">S</span>
+                <span class="fb__who"><strong>@santaceiarestaurant</strong><small>Instagram · ontem</small></span>
+              </header>
+              <blockquote class="fb__msg">Melhor social media que já contratamos. Recomendo de olhos fechados!</blockquote>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. SOBRE / CEO ============ -->
+    <section class="section about" id="sobre">
+      <figure class="about__photo reveal">
+        <img src="assets/ceo.jpg" alt="Duda, fundadora e CEO da campoz.co" loading="lazy" />
+        <figcaption><span class="dot"></span> Fundadora &amp; CEO</figcaption>
+      </figure>
+
+      <div class="about__text reveal">
+        <p class="eyebrow"><span class="dot"></span> Quem está por trás</p>
+        <h2 class="h2">Duda<em>, a mente<br />da campoz.co</em></h2>
+        <p class="lead">A campoz.co nasceu de uma inquietação: ver marcas incríveis se escondendo atrás de uma comunicação que não tinha a cara delas.</p>
+        <p>Unimos estratégia e estética para construir posicionamentos que não pedem licença. Cada projeto começa entendendo quem você é, quem você quer atrair e o que faz sua marca ser impossível de ignorar — e termina em conteúdo, identidade e presença que convertem.</p>
+
+        <ul class="pillars">
+          <li><span>01</span> Cultura</li>
+          <li><span>02</span> Psicologia</li>
+          <li><span>03</span> Moda</li>
+        </ul>
+
+        <p class="signoff"><em>“Sua marca pode fazer mais. Vamos ousar.”</em></p>
+      </div>
+    </section>
+
+    <!-- ============ 4. PORTFÓLIO ============ -->
+    <section class="section portfolio" id="portfolio">
+      <header class="portfolio__head reveal">
+        <p class="eyebrow eyebrow--center"><span class="dot"></span> Portfólio</p>
+        <h2 class="h2">Marcas que <em>não se misturam</em></h2>
+        <p class="lead">Identidades, campanhas e conteúdos criados para ficar na memória.</p>
+      </header>
+
+      <!-- Troque as imagens em assets/portfolio/. data-dir: up (sobe) ou down (desce) -->
+      <div class="columns">
+        <div class="col" data-dir="up">
+          <div class="col__track">
+            <img src="assets/portfolio/projeto-1.jpg" alt="Ensaio editorial com chá em ambiente aconchegante" loading="lazy" />
+            <img src="assets/portfolio/projeto-2.jpg" alt="Ensaio de advogada lendo caderno no escritório" loading="lazy" />
+            <img src="assets/portfolio/projeto-3.jpg" alt="Ensaio de moda em preto e branco com camiseta Raízes" loading="lazy" />
+            <img src="assets/portfolio/projeto-4.jpg" alt="Ensaio de moda com vestido laranja na loja" loading="lazy" />
+          </div>
+        </div>
+        <div class="col" data-dir="down">
+          <div class="col__track">
+            <img src="assets/portfolio/projeto-5.jpg" alt="Kit de brandbook entregue pela campoz.co" loading="lazy" />
+            <img src="assets/portfolio/projeto-6.jpg" alt="Ensaio em preto e branco com bolsa de couro" loading="lazy" />
+            <img src="assets/portfolio/projeto-7.jpg" alt="Ensaio editorial com top preto e acessórios dourados" loading="lazy" />
+            <img src="assets/portfolio/projeto-8.jpg" alt="Ensaio de advogada escrevendo com vista para as montanhas" loading="lazy" />
+          </div>
+        </div>
+        <div class="col" data-dir="up">
+          <div class="col__track">
+            <img src="assets/portfolio/projeto-9.jpg" alt="Ensaio em preto e branco com blusa de paetê" loading="lazy" />
+            <img src="assets/portfolio/projeto-10.jpg" alt="Ensaio de moda com conjunto off-white" loading="lazy" />
+            <img src="assets/portfolio/projeto-11.jpg" alt="Ensaio de advogada junto à janela do escritório" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. PROCESSO (linha do tempo) ============ -->
+    <section class="section process" id="processo">
+      <header class="process__head reveal">
+        <p class="eyebrow eyebrow--center"><span class="dot"></span> Processo</p>
+        <h2 class="h2">Do primeiro papo à <em>marca que ninguém esquece</em></h2>
+        <p class="lead">Um caminho claro, com você participando de cada etapa.</p>
+      </header>
+
+      <div class="timeline" id="timeline">
+        <div class="timeline__line" aria-hidden="true"><span class="timeline__fill"></span></div>
+        <ol class="timeline__list">
+          <li class="step">
+            <span class="step__dot"></span>
+            <div class="step__card">
+              <span class="step__num">01</span>
+              <h3>Conversa inicial</h3>
+              <p>Um bate-papo para entender sua marca, seu momento e onde você quer chegar.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__dot"></span>
+            <div class="step__card">
+              <span class="step__num">02</span>
+              <h3>Diagnóstico</h3>
+              <p>Analisamos seu perfil, seus concorrentes e seu público para encontrar o que está travando sua marca.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__dot"></span>
+            <div class="step__card">
+              <span class="step__num">03</span>
+              <h3>Estratégia &amp; posicionamento</h3>
+              <p>Definimos o tom de voz, a estética e a linha editorial — o jeito único da sua marca aparecer.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__dot"></span>
+            <div class="step__card">
+              <span class="step__num">04</span>
+              <h3>Planejamento</h3>
+              <p>Montamos o calendário de conteúdo e roteiros. Você aprova tudo antes de ir para a câmera.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__dot"></span>
+            <div class="step__card">
+              <span class="step__num">05</span>
+              <h3>Captação</h3>
+              <p>Fotos e vídeos produzidos por nós: um sábado por mês ou às sextas a partir das 17h.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__dot"></span>
+            <div class="step__card">
+              <span class="step__num">06</span>
+              <h3>Publicação &amp; análise</h3>
+              <p>Postamos, acompanhamos os resultados e ajustamos a rota todo mês para crescer com consistência.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 6. FAQ ============ -->
+    <section class="section faq" id="faq">
+      <div class="faq__head reveal">
+        <p class="eyebrow"><span class="dot"></span> Perguntas frequentes</p>
+        <h2 class="h2">Antes de <em>ousar,</em> tire suas dúvidas.</h2>
+        <p class="lead">Não encontrou o que procurava? Chama a gente — respondemos rapidinho.</p>
+        <a href="#contato" class="btn btn--line">Falar com a campoz <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="faq__list reveal">
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">Quais serviços a campoz.co oferece?<i></i></button>
+          <div class="faq__a"><div><p>Gestão de mídias sociais, branding, consultoria de posicionamento e eventos. Tudo pensado a partir de cultura, psicologia e moda para dar personalidade à sua marca.</p></div></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">Como funcionam as captações de foto e vídeo?<i></i></button>
+          <div class="faq__a"><div><p>As captações acontecem em um sábado por mês, em qualquer horário (marcado com antecedência), ou às sextas a partir das 17h. Tudo é planejado antes para aproveitar ao máximo o dia.</p></div></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">Qual é o horário de atendimento?<i></i></button>
+          <div class="faq__a"><div><p>A produção de conteúdo e a consultoria rodam em horário comercial, com dedicação full time aos projetos em andamento.</p></div></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">Como funciona o pagamento da gestão de mídias?<i></i></button>
+          <div class="faq__a"><div><p>O pagamento é mensal e, idealmente, feito até o 5º dia útil de cada mês.</p></div></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">Vocês atendem marcas de qualquer segmento?<i></i></button>
+          <div class="faq__a"><div><p>Sim. De moda a saúde, gastronomia e serviços — o que a gente procura é uma marca com vontade de se posicionar de verdade.</p></div></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">Como começo meu projeto?<i></i></button>
+          <div class="faq__a"><div><p>Preencha o formulário de contato ou chame no WhatsApp. Marcamos uma conversa para entender sua marca e montar a proposta ideal.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. CONTATO ============ -->
+    <section class="section contact" id="contato">
+      <div class="contact__glow" aria-hidden="true"></div>
+
+      <div class="contact__intro reveal">
+        <p class="eyebrow"><span class="dot"></span> Contato</p>
+        <h2 class="contact__title">Sua marca pode fazer mais. <em>Vamos ousar.</em></h2>
+
+        <!-- Troque WhatsApp e e-mail pelos dados reais -->
+        <ul class="contact__info">
+          <li><span>Instagram</span><a href="https://www.instagram.com/campozlab" target="_blank" rel="noopener">@campozlab</a></li>
+          <li><span>WhatsApp</span><a href="https://wa.link/974kj4" target="_blank" rel="noopener">(21) 96850-2898</a></li>
+          <li><span>E-mail</span><a href="mailto:dudacamposds@gmail.com">dudacamposds@gmail.com</a></li>
+          <li><span>Base</span><p>Teresópolis · RJ</p></li>
+        </ul>
+      </div>
+
+      <form class="contact__form reveal" id="contactForm" novalidate>
+        <fieldset class="chips">
+          <legend>Do que você precisa?</legend>
+          <label><input type="checkbox" name="servico" value="Gestão de mídias" /><span>Gestão de mídias</span></label>
+          <label><input type="checkbox" name="servico" value="Branding" /><span>Branding</span></label>
+          <label><input type="checkbox" name="servico" value="Consultoria" /><span>Consultoria</span></label>
+          <label><input type="checkbox" name="servico" value="Eventos" /><span>Eventos</span></label>
+        </fieldset>
+
+        <div class="field"><input type="text" id="f-nome" name="nome" placeholder=" " required /><label for="f-nome">Seu nome</label></div>
+        <div class="field"><input type="text" id="f-marca" name="marca" placeholder=" " /><label for="f-marca">Sua marca / @</label></div>
+        <div class="field"><textarea id="f-msg" name="mensagem" rows="3" placeholder=" "></textarea><label for="f-msg">Conta um pouco sobre o projeto</label></div>
+
+        <button type="submit" class="btn btn--solid">Enviar pelo WhatsApp <span aria-hidden="true">→</span></button>
+        <p class="form__note" id="formNote" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__word" aria-hidden="true">campoz<span>.co</span></p>
+    <div class="footer__bar">
+      <span>© <span id="year"></span> campoz.co — Branding &amp; posicionamento</span>
+      <span>Not made to blend in. Made to stand out.</span>
+      <a href="#topo">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

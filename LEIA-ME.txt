@@ -1,0 +1,30 @@
+campoz.co — site em HTML, CSS e JS puros
+
+ARQUIVOS
+  index.html   estrutura e textos
+  style.css    visual (cores em :root no topo)
+  script.js    vídeo no scroll, carrosséis, FAQ, menu e formulário
+  assets/      vídeo, foto da CEO, prints e portfólio
+
+TROCAR AS IMAGENS PROVISÓRIAS (mesmo nome de arquivo = nada a mudar no código)
+  assets/hero-loop.mp4               vídeo em loop (ida e volta) usado no modo "auto"
+  assets/*-mobile.*                   versões verticais do vídeo/capa, usadas no celular em pé
+  assets/ceo.jpg                     foto da CEO (vertical 3:4)
+  Depoimentos: cartões em HTML no index.html (seção Depoimentos) — copie um <figure class="fb"> para adicionar mais
+  assets/portfolio/projeto-1..11.jpg portfólio — 1-4 coluna que sobe, 5-8 desce, 9-11 sobe
+
+TROCAR DADOS
+  WhatsApp: no topo do script.js (const WHATSAPP = número do formulário) e o link wa.link no index.html
+  E-mail, Instagram e depoimento em destaque: index.html (seções Depoimentos e Contato)
+
+AJUSTES DO VÍDEO
+  --hero-length no style.css: quanto rolar até o vídeo acabar (padrão 420vh)
+  VIDEO_END e SMOOTH no script.js: ponto da transição e suavidade
+
+SE TROCAR O VÍDEO
+  Para o scroll ficar liso, cada quadro precisa ser keyframe. Converta com:
+  ffmpeg -i seu-video.mp4 -an -c:v libx264 -crf 25 -g 1 -pix_fmt yuv420p -movflags +faststart assets/hero.mp4
+
+TESTAR
+  Abra com um servidor local (ex.: extensão Live Server do VS Code) — assim o vídeo
+  é carregado inteiro na memória e o scroll fica mais fluido do que abrindo o arquivo direto.
